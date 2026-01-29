@@ -1,4 +1,4 @@
-import { Hero, Features, Cards, Gallery, Form, Table } from '../components';
+import { Hero, Cards, Gallery, Form, Table } from '../components';
 
 function Components() {
   return (
@@ -8,28 +8,6 @@ function Components() {
         description="This is a hero section with a title, description, and primary and secondary actions."
         primaryAction={{ label: 'Get Started' }}
         secondaryAction={{ label: 'View Source' }}
-      />
-
-      <Features
-        header="Features"
-        description="This is a features section with a grid of features."
-        features={[
-          {
-            icon: '⚡',
-            title: 'Feature One',
-            description: 'This is a description of feature one.',
-          },
-          {
-            icon: '🎨',
-            title: 'Feature Two',
-            description: 'This is a description of feature two.',
-          },
-          {
-            icon: '📱',
-            title: 'Feature Three',
-            description: 'This is a description of feature three.',
-          },
-        ]}
       />
 
       <Cards
