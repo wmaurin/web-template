@@ -1,4 +1,4 @@
-# Web Template
+# Website Template
 
 Website template with base HTML element styling and reusable components. Built with React and Tailwind CSS.
 
