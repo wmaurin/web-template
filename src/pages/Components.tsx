@@ -3,10 +3,6 @@ import { Hero, Features, Cards, Gallery, Form, Table } from '../components';
 function Components() {
   return (
     <div>
-      <header>
-        <h1>Components</h1>
-        <p>Showcase of components.</p>
-      </header>
       <Hero
         title="Hero"
         description="This is a hero section with a title, description, and primary and secondary actions."

@@ -75,7 +75,7 @@
   --spacing-scroll-margin: 5rem;
   --spacing-underline-offset: 4px;
   --spacing-textarea-min-height: 5rem;
-  --spacing-section-margin: 5rem;
+  --spacing-section-margin: 3rem;
   --spacing-scrollbar: 0.5rem;
 
   /* Additional colors */
@@ -140,27 +140,18 @@ h1 {
   font-size: var(--font-size-4xl);
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-tighter);
-  margin-bottom: var(--padding-lg);
-  margin-top: var(--padding-xl);
 }
 
 h2 {
   font-size: var(--font-size-3xl);
-  margin-bottom: var(--padding-lg);
-  margin-top: var(--padding-xl);
-  padding-bottom: var(--padding-md);
 }
 
 h3 {
   font-size: var(--font-size-2xl);
-  margin-bottom: var(--padding-md);
-  margin-top: var(--padding-lg);
 }
 
 h4 {
   font-size: var(--font-size-xl);
-  margin-bottom: var(--padding-md);
-  margin-top: var(--padding-lg);
 }
 
 a {
@@ -178,7 +169,7 @@ a:hover {
 p {
   color: var(--color-muted-foreground);
   line-height: var(--line-height-relaxed);
-  margin-bottom: var(--padding-lg);
+  margin-bottom: var(--padding-md);
 }
 
 p.lead {
@@ -538,7 +529,7 @@ q {
 hr {
   border: none;
   border-top: 1px solid var(--color-border);
-  margin: var(--padding-2xl) 0;
+  margin: var(--padding-md) 0;
 }
 
 ::selection {

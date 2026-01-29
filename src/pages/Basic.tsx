@@ -3,11 +3,6 @@ import { Section } from '../components';
 function Basic() {
   return (
     <div>
-      <header>
-        <h1>Basic</h1>
-        <p>Showcase of basic HTML element styles.</p>
-      </header>
-
       <Section header="Typography">
         <div>
           <p>
