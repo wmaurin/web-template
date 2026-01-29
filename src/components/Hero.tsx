@@ -12,9 +12,9 @@ function Hero({
   secondaryAction,
 }: HeroProps) {
   return (
-    <section className="py-16 text-center max-w-3xl mx-auto">
-      <h1 className="mb-6">{title}</h1>
-      {description && <p className="lead text-lg mb-8">{description}</p>}
+    <section className="py-8 text-center max-w-3xl mx-auto">
+      <h1 className="mb-4">{title}</h1>
+      {description && <p className="lead text-lg">{description}</p>}
       {(primaryAction || secondaryAction) && (
         <div className="flex gap-4 justify-center flex-wrap">
           {primaryAction && (
