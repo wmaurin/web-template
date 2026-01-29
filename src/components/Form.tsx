@@ -17,7 +17,13 @@ interface FormProps {
   onSubmit?: (data: FormData) => void;
 }
 
-function Form({ header, description, fields, submitLabel = 'Submit', onSubmit }: FormProps) {
+function Form({
+  header,
+  description,
+  fields,
+  submitLabel = 'Submit',
+  onSubmit,
+}: FormProps) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (onSubmit) {
@@ -32,7 +38,9 @@ function Form({ header, description, fields, submitLabel = 'Submit', onSubmit }:
           <div key={field.name} className="flex flex-col gap-2">
             <label htmlFor={field.name}>
               {field.label}
-              {field.required && <span className="text-destructive ml-1">*</span>}
+              {field.required && (
+                <span className="text-destructive ml-1">*</span>
+              )}
             </label>
 
             {field.type === 'textarea' ? (
@@ -43,7 +51,11 @@ function Form({ header, description, fields, submitLabel = 'Submit', onSubmit }:
                 required={field.required}
               />
             ) : field.type === 'select' ? (
-              <select id={field.name} name={field.name} required={field.required}>
+              <select
+                id={field.name}
+                name={field.name}
+                required={field.required}
+              >
                 <option value="">{field.placeholder || 'Select...'}</option>
                 {field.options?.map((option) => (
                   <option key={option} value={option}>
@@ -72,4 +84,3 @@ function Form({ header, description, fields, submitLabel = 'Submit', onSubmit }:
 }
 
 export default Form;
-

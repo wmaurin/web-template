@@ -5,7 +5,12 @@ interface HeroProps {
   secondaryAction?: { label: string; onClick?: () => void };
 }
 
-function Hero({ title, description, primaryAction, secondaryAction }: HeroProps) {
+function Hero({
+  title,
+  description,
+  primaryAction,
+  secondaryAction,
+}: HeroProps) {
   return (
     <section className="py-16 text-center max-w-3xl mx-auto">
       <h1 className="mb-6">{title}</h1>
@@ -13,7 +18,9 @@ function Hero({ title, description, primaryAction, secondaryAction }: HeroProps)
       {(primaryAction || secondaryAction) && (
         <div className="flex gap-4 justify-center flex-wrap">
           {primaryAction && (
-            <button onClick={primaryAction.onClick}>{primaryAction.label}</button>
+            <button onClick={primaryAction.onClick}>
+              {primaryAction.label}
+            </button>
           )}
           {secondaryAction && (
             <button className="secondary" onClick={secondaryAction.onClick}>
@@ -27,4 +34,3 @@ function Hero({ title, description, primaryAction, secondaryAction }: HeroProps)
 }
 
 export default Hero;
-

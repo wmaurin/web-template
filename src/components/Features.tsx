@@ -13,7 +13,12 @@ interface FeaturesProps {
   columns?: 2 | 3 | 4;
 }
 
-function Features({ header, description, features, columns = 3 }: FeaturesProps) {
+function Features({
+  header,
+  description,
+  features,
+  columns = 3,
+}: FeaturesProps) {
   const gridCols = {
     2: 'grid-cols-1 sm:grid-cols-2',
     3: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
@@ -38,4 +43,3 @@ function Features({ header, description, features, columns = 3 }: FeaturesProps)
 }
 
 export default Features;
-

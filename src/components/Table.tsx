@@ -33,4 +33,3 @@ function Table({ header, description, columns, rows }: TableProps) {
 }
 
 export default Table;
-

@@ -6,7 +6,7 @@ interface SectionProps {
 
 function Section({ header, description, children }: SectionProps) {
   return (
-    <section className="py-8">
+    <section>
       <h2>{header}</h2>
       {description && <p className="lead">{description}</p>}
       {children}
@@ -15,4 +15,3 @@ function Section({ header, description, children }: SectionProps) {
 }
 
 export default Section;
-

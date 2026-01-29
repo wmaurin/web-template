@@ -1,3 +1,5 @@
+import { Section } from '../components';
+
 function Basic() {
   return (
     <div>
@@ -6,17 +8,7 @@ function Basic() {
         <p>Showcase of basic HTML element styles.</p>
       </header>
 
-      {/* Typography */}
-      <section>
-        <h2 className="border-b">Typography</h2>
-
-        <div>
-          <h1>Heading One</h1>
-          <h2>Heading Two</h2>
-          <h3>Heading Three</h3>
-          <h4>Heading Four</h4>
-        </div>
-
+      <Section header="Typography">
         <div>
           <p>
             This is a standard paragraph with <strong>bold text</strong>,{' '}
@@ -35,13 +27,12 @@ function Basic() {
           </p>
           <small>This is small text, useful for captions and fine print.</small>
         </div>
-      </section>
+      </Section>
 
-      {/* Buttons */}
-      <section>
-        <h2 className="border-b">Buttons</h2>
-        <p>Multiple button variants for different use cases.</p>
-
+      <Section
+        header="Buttons"
+        description="Multiple button variants for different use cases."
+      >
         <div className="flex flex-wrap gap-3">
           <button>Primary</button>
           <button className="secondary">Secondary</button>
@@ -50,13 +41,12 @@ function Basic() {
           <button className="destructive">Destructive</button>
           <button disabled>Disabled</button>
         </div>
-      </section>
+      </Section>
 
-      {/* Form Elements */}
-      <section>
-        <h2 className="border-b">Form Elements</h2>
-        <p>Inputs, textareas, and other form controls.</p>
-
+      <Section
+        header="Form Elements"
+        description="Inputs, textareas, and other form controls."
+      >
         <form onSubmit={(e) => e.preventDefault()} className="space-y-6">
           <div className="flex flex-col gap-2">
             <label htmlFor="text-input">Text Input</label>
@@ -117,13 +107,9 @@ function Basic() {
             </button>
           </div>
         </form>
-      </section>
+      </Section>
 
-      {/* Lists */}
-      <section>
-        <h2 className="border-b">Lists</h2>
-        <p>Ordered and unordered lists.</p>
-
+      <Section header="Lists" description="Ordered and unordered lists.">
         <div>
           <h4>Unordered List</h4>
           <ul>
@@ -133,13 +119,14 @@ function Basic() {
             <li>Fourth and final item</li>
           </ul>
         </div>
-      </section>
+      </Section>
 
-      {/* Code */}
-      <section>
-        <h2 className="border-b">Code</h2>
+      <Section
+        header="Code"
+        description="Inline code snippets and code blocks."
+      >
         <p>
-          Inline <code>code snippets</code> and code blocks.
+          Inline <code>code snippets</code> look like this.
         </p>
 
         <pre>
@@ -148,24 +135,16 @@ function Basic() {
   return { message: "Welcome" };
 }`}</code>
         </pre>
-      </section>
+      </Section>
 
-      {/* Blockquote */}
-      <section>
-        <h2 className="border-b">Blockquote</h2>
-        <p>For quotes and callouts.</p>
-
+      <Section header="Blockquote" description="For quotes and callouts.">
         <blockquote>
           "Design is not just what it looks like and feels like. Design is how
           it works." — Steve Jobs
         </blockquote>
-      </section>
+      </Section>
 
-      {/* Table */}
-      <section>
-        <h2 className="border-b">Table</h2>
-        <p>Data tables with hover states.</p>
-
+      <Section header="Table" description="Data tables with hover states.">
         <table>
           <thead>
             <tr>
@@ -192,13 +171,12 @@ function Basic() {
             </tr>
           </tbody>
         </table>
-      </section>
+      </Section>
 
-      {/* Semantic Elements */}
-      <section>
-        <h2 className="border-b">Semantic Elements</h2>
-        <p>Other useful HTML elements.</p>
-
+      <Section
+        header="Semantic Elements"
+        description="Other useful HTML elements."
+      >
         <div>
           <h4>Address</h4>
           <address>
@@ -223,9 +201,8 @@ function Basic() {
           <hr />
           <p>Content below the divider.</p>
         </div>
-      </section>
+      </Section>
 
-      {/* Footer */}
       <footer>
         <p>&copy; 2026 Style Guide. Built with React & Tailwind CSS.</p>
       </footer>

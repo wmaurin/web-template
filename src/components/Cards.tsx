@@ -34,4 +34,3 @@ function Cards({ header, description, cards, columns = 3 }: CardsProps) {
 }
 
 export default Cards;
-

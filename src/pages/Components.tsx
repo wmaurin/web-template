@@ -3,7 +3,10 @@ import { Hero, Features, Cards, Gallery, Form, Table } from '../components';
 function Components() {
   return (
     <div>
+      <header>
         <h1>Components</h1>
+        <p>Showcase of components.</p>
+      </header>
       <Hero
         title="Hero"
         description="This is a hero section with a title, description, and primary and secondary actions."
@@ -74,13 +77,39 @@ function Components() {
         header="Contact Form"
         description="This is a contact form with validation."
         fields={[
-          { name: 'name', label: 'Name', type: 'text', placeholder: 'John Doe', required: true },
-          { name: 'email', label: 'Email', type: 'email', placeholder: 'john@example.com', required: true },
-          { name: 'subject', label: 'Subject', type: 'select', options: ['General', 'Support', 'Sales'], required: true },
-          { name: 'message', label: 'Message', type: 'textarea', placeholder: 'Your message...', required: true },
+          {
+            name: 'name',
+            label: 'Name',
+            type: 'text',
+            placeholder: 'John Doe',
+            required: true,
+          },
+          {
+            name: 'email',
+            label: 'Email',
+            type: 'email',
+            placeholder: 'john@example.com',
+            required: true,
+          },
+          {
+            name: 'subject',
+            label: 'Subject',
+            type: 'select',
+            options: ['General', 'Support', 'Sales'],
+            required: true,
+          },
+          {
+            name: 'message',
+            label: 'Message',
+            type: 'textarea',
+            placeholder: 'Your message...',
+            required: true,
+          },
         ]}
         submitLabel="Send Message"
-        onSubmit={(data) => console.log('Form submitted:', Object.fromEntries(data))}
+        onSubmit={(data) =>
+          console.log('Form submitted:', Object.fromEntries(data))
+        }
       />
 
       <Table
@@ -88,9 +117,24 @@ function Components() {
         description="This is a table with a grid of plans and features."
         columns={['Plan', 'Price', 'Features', 'Action']}
         rows={[
-          ['Free', '$0/mo', '5 projects, 1GB storage', <button className="ghost">Select</button>],
-          ['Pro', '$19/mo', 'Unlimited projects, 50GB storage', <button className="ghost">Select</button>],
-          ['Enterprise', '$99/mo', 'Everything + priority support', <button className="ghost">Select</button>],
+          [
+            'Free',
+            '$0/mo',
+            '5 projects, 1GB storage',
+            <button className="ghost">Select</button>,
+          ],
+          [
+            'Pro',
+            '$19/mo',
+            'Unlimited projects, 50GB storage',
+            <button className="ghost">Select</button>,
+          ],
+          [
+            'Enterprise',
+            '$99/mo',
+            'Everything + priority support',
+            <button className="ghost">Select</button>,
+          ],
         ]}
       />
     </div>
@@ -98,4 +142,3 @@ function Components() {
 }
 
 export default Components;
-

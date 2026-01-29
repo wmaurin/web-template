@@ -29,4 +29,3 @@ function Card({ title, description, image, children, footer }: CardProps) {
 }
 
 export default Card;
-

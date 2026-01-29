@@ -35,4 +35,3 @@ function Gallery({ header, description, images, columns = 3 }: GalleryProps) {
 }
 
 export default Gallery;
-
