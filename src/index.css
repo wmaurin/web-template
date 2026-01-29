@@ -166,6 +166,16 @@ a:hover {
   text-decoration-color: var(--color-foreground);
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--color-muted-foreground);
+  transition: color var(--transition-fast);
+}
+
+nav a:hover {
+  color: var(--color-foreground);
+}
+
 p {
   color: var(--color-muted-foreground);
   line-height: var(--line-height-relaxed);
