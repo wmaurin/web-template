@@ -13,16 +13,16 @@ function Table({ header, description, columns, rows }: TableProps) {
       <table>
         <thead>
           <tr>
-            {columns.map((col, index) => (
-              <th key={index}>{col}</th>
+            {columns.map((col) => (
+              <th key={col}>{col}</th>
             ))}
           </tr>
         </thead>
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={rowIndex}>
+            <tr key={`row-${rowIndex}`}>
               {row.map((cell, cellIndex) => (
-                <td key={cellIndex}>{cell}</td>
+                <td key={`cell-${rowIndex}-${cellIndex}`}>{cell}</td>
               ))}
             </tr>
           ))}

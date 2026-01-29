@@ -17,9 +17,9 @@ function Gallery({ header, description, images, columns = 3 }: GalleryProps) {
   return (
     <Section header={header} description={description}>
       <div className={`grid ${gridCols[columns]} gap-4`}>
-        {images.map((image, index) => (
+        {images.map((image) => (
           <div
-            key={index}
+            key={image.src}
             className="overflow-hidden rounded-lg border border-border bg-muted aspect-video"
           >
             <img

@@ -81,9 +81,7 @@ function Components() {
           },
         ]}
         submitLabel="Send Message"
-        onSubmit={(data) =>
-          console.log('Form submitted:', Object.fromEntries(data))
-        }
+        onSubmit={() => {}}
       />
 
       <Table

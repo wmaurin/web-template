@@ -25,8 +25,8 @@ function Cards({ header, description, cards, columns = 3 }: CardsProps) {
   return (
     <Section header={header} description={description}>
       <div className={`grid ${gridCols[columns]} gap-6`}>
-        {cards.map((card, index) => (
-          <Card key={index} {...card} />
+        {cards.map((card) => (
+          <Card key={card.title} {...card} />
         ))}
       </div>
     </Section>
