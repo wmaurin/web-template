@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-  const navLinks = [{ path: '/Basic', label: 'Basic' }];
+  const navLinks = [
+    { path: '/basic', label: 'Basic' },
+    { path: '/components', label: 'Components' },
+  ];
 
   return (
     <nav className="flex justify-between items-center">
