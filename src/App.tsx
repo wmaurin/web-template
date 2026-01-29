@@ -4,12 +4,11 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
 function App() {
-
   return (
     <>
-    <div className="max-w-7xl mx-auto p-6">
-      <Navbar />
-      <div className="mt-6">  
+      <div className="max-w-7xl mx-auto p-6">
+        <Navbar />
+        <div className="mt-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/HTMLElements" element={<HTMLElementsPage />} />
@@ -17,7 +16,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -2,14 +2,22 @@ import React from 'react';
 
 function HTMLElementsPage() {
   const containerStyle: React.CSSProperties = {
-    marginBottom: '5rem'
+    marginBottom: '5rem',
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', padding: '1rem' }}>
-
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        padding: '1rem',
+      }}
+    >
       <div style={containerStyle}>
-        <h1>H1</h1><h2>H2</h2><h3>H3</h3>
+        <h1>H1</h1>
+        <h2>H2</h2>
+        <h3>H3</h3>
       </div>
 
       <div style={containerStyle}>
@@ -45,7 +53,9 @@ function HTMLElementsPage() {
       </div>
 
       <div style={containerStyle}>
-        <form><input type="text" placeholder="Input" /></form>
+        <form>
+          <input type="text" placeholder="Input" />
+        </form>
       </div>
 
       <div style={containerStyle}>
@@ -57,7 +67,9 @@ function HTMLElementsPage() {
       </div>
 
       <div style={containerStyle}>
-        <input type="text" placeholder="Text input" /> <input type="number" placeholder="Number" /> <input type="checkbox" /> <input type="radio" name="r" />
+        <input type="text" placeholder="Text input" />{' '}
+        <input type="number" placeholder="Number" /> <input type="checkbox" />{' '}
+        <input type="radio" name="r" />
       </div>
 
       <div style={containerStyle}>
@@ -69,7 +81,10 @@ function HTMLElementsPage() {
       </div>
 
       <div style={containerStyle}>
-        <ol><li>One</li><li>Two</li></ol>
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+        </ol>
       </div>
 
       <div style={containerStyle}>
