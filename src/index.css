@@ -71,6 +71,9 @@ h3 {
 
 a {
     color: var(--color-accent);
+}
+
+a:hover {
     text-decoration: underline;
 }
 
