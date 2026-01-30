@@ -5,9 +5,14 @@ interface SectionProps {
   children: React.ReactNode;
 }
 
-function Section({ header, description, aligned = 'left', children }: SectionProps) {
+function Section({
+  header,
+  description,
+  aligned = 'left',
+  children,
+}: SectionProps) {
   const alignmentClass = aligned === 'center' ? 'text-center' : 'text-left';
-  
+
   return (
     <section className={alignmentClass}>
       <h2>{header}</h2>

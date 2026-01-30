@@ -15,6 +15,7 @@ interface FormProps {
   fields: FormField[];
   submitLabel?: string;
   onSubmit?: (data: FormData) => void;
+  center?: boolean;
 }
 
 function Form({
@@ -23,6 +24,7 @@ function Form({
   fields,
   submitLabel = 'Submit',
   onSubmit,
+  center,
 }: FormProps) {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,8 +34,15 @@ function Form({
   };
 
   return (
-    <Section header={header} description={description}>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4 max-w-md">
+    <Section
+      header={header}
+      description={description}
+      aligned={center ? 'center' : 'left'}
+    >
+      <form
+        onSubmit={handleSubmit}
+        className={`flex flex-col gap-4 max-w-md text-left ${center ? 'mx-auto' : ''}`}
+      >
         {fields.map((field) => (
           <div key={field.name} className="flex flex-col gap-2">
             <label htmlFor={field.name}>

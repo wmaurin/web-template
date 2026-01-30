@@ -17,20 +17,16 @@ function Hero({
     <section className="py-8 text-center max-w-3xl mx-auto">
       {image && (
         <div className="mb-6 flex justify-center">
-          <img 
-            src={image} 
-            alt="Image" 
+          <img
+            src={image}
+            alt="Image"
             className="max-w-full h-auto"
             style={{ maxHeight: '200px' }}
           />
         </div>
       )}
       <div className="mb-4">
-        {typeof header === 'string' ? (
-          <h1>{header}</h1>
-        ) : (
-          header
-        )}
+        {typeof header === 'string' ? <h1>{header}</h1> : header}
       </div>
       {description && <p className="lead text-lg">{description}</p>}
       {(primaryAction || secondaryAction) && (

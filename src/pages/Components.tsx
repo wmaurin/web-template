@@ -49,6 +49,7 @@ function Components() {
 
       <Form
         header="Contact Form"
+        center={true}
         description="This is a contact form with validation."
         fields={[
           {
