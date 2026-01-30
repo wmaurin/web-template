@@ -83,7 +83,7 @@ function Sidebar({
             <h2>Menu</h2>
             <button
               onClick={onClose}
-              className="ghost"
+              className="menu-button"
               aria-label="Close sidebar"
               style={{ padding: '0.5rem' }}
             >

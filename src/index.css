@@ -324,6 +324,25 @@ button.destructive:hover {
   opacity: 1;
 }
 
+/* Menu button with glow effect */
+button.menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--color-foreground);
+  cursor: pointer;
+  transition: filter var(--transition-fast);
+}
+
+button.menu-button:hover {
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+button.menu-button:focus-visible {
+  outline: none;
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+
 /* Code */
 code {
   background-color: var(--color-muted);

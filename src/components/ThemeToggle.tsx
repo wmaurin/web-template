@@ -20,7 +20,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="ghost"
+      className="menu-button"
       aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
       style={{ padding: '0.5rem' }}
     >

@@ -35,7 +35,7 @@ function Navbar() {
           {/* Mobile menu button - only visible on mobile */}
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className="ghost"
+            className="menu-button"
             aria-label="Open menu"
             style={{ padding: '0.5rem' }}
           >
