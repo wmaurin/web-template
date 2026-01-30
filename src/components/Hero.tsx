@@ -1,19 +1,37 @@
 interface HeroProps {
-  title: string;
+  header?: string | React.ReactElement;
+  image?: string;
   description?: string;
   primaryAction?: { label: string; onClick?: () => void };
   secondaryAction?: { label: string; onClick?: () => void };
 }
 
 function Hero({
-  title,
+  header,
+  image,
   description,
   primaryAction,
   secondaryAction,
 }: HeroProps) {
   return (
     <section className="py-8 text-center max-w-3xl mx-auto">
-      <h1 className="mb-4">{title}</h1>
+      {image && (
+        <div className="mb-6 flex justify-center">
+          <img 
+            src={image} 
+            alt="Image" 
+            className="max-w-full h-auto"
+            style={{ maxHeight: '200px' }}
+          />
+        </div>
+      )}
+      <div className="mb-4">
+        {typeof header === 'string' ? (
+          <h1>{header}</h1>
+        ) : (
+          header
+        )}
+      </div>
       {description && <p className="lead text-lg">{description}</p>}
       {(primaryAction || secondaryAction) && (
         <div className="flex gap-4 justify-center flex-wrap">

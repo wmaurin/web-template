@@ -4,7 +4,7 @@ function Components() {
   return (
     <div>
       <Hero
-        title="Hero"
+        header="Hero"
         description="This is a hero section with a title, description, and primary and secondary actions."
         primaryAction={{ label: 'Get Started' }}
         secondaryAction={{ label: 'View Source' }}

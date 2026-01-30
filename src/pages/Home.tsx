@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <Hero
-      title="Website Template"
+      header="Website Template"
       description="Personal website template with base HTML element styling and reusable components. Built with React and Tailwind CSS."
       primaryAction={{
         label: 'View Base Styles',
