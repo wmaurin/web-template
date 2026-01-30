@@ -16,7 +16,12 @@ function Components() {
         aligned="center"
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur.
         </p>
       </Section>
 
@@ -25,10 +30,17 @@ function Components() {
         description="This is a left-aligned section with default text alignment."
       >
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae
+          tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur
+          interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod
+          nunc.
         </p>
         <p>
-          Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+          Donec sed odio dui. Donec ullamcorper nulla non metus auctor
+          fringilla. Maecenas sed diam eget risus varius blandit sit amet non
+          magna.
         </p>
       </Section>
 
@@ -70,9 +82,9 @@ function Components() {
       />
 
       <Form
-        header="Contact Form"
+        header="Contact Form (Centered)"
         center={true}
-        description="This is a contact form with validation."
+        description="This is a centered contact form with validation."
         fields={[
           {
             name: 'name',
@@ -104,6 +116,36 @@ function Components() {
           },
         ]}
         submitLabel="Send Message"
+        onSubmit={() => {}}
+      />
+
+      <Form
+        header="Feedback Form"
+        description="This is a left-aligned form without centering."
+        fields={[
+          {
+            name: 'fullName',
+            label: 'Full Name',
+            type: 'text',
+            placeholder: 'Jane Smith',
+            required: true,
+          },
+          {
+            name: 'email',
+            label: 'Email Address',
+            type: 'email',
+            placeholder: 'jane@example.com',
+            required: true,
+          },
+          {
+            name: 'feedback',
+            label: 'Your Feedback',
+            type: 'textarea',
+            placeholder: 'Tell us what you think...',
+            required: true,
+          },
+        ]}
+        submitLabel="Submit Feedback"
         onSubmit={() => {}}
       />
     </div>

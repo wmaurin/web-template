@@ -25,9 +25,9 @@ function Hero({
           />
         </div>
       )}
-      <div className="mb-4">
-        {typeof header === 'string' ? <h1>{header}</h1> : header}
-      </div>
+
+      {typeof header === 'string' ? <h1>{header}</h1> : header}
+
       {description && <p className="lead text-lg">{description}</p>}
       {(primaryAction || secondaryAction) && (
         <div className="flex gap-4 justify-center flex-wrap">
