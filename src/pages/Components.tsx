@@ -1,4 +1,4 @@
-import { Hero, Cards, Gallery, Form } from '../components';
+import { Hero, Cards, Gallery, Form, Section } from '../components';
 
 function Components() {
   return (
@@ -9,6 +9,28 @@ function Components() {
         primaryAction={{ label: 'Get Started' }}
         secondaryAction={{ label: 'View Source' }}
       />
+
+      <Section
+        header="Centered Section"
+        description="This is a centered section with text aligned to the center."
+        aligned="center"
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </Section>
+
+      <Section
+        header="Normal Section"
+        description="This is a left-aligned section with default text alignment."
+      >
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc. Sed euismod, nisi vel consectetur interdum, nisl nunc egestas nunc, vitae tincidunt nisl nunc euismod nunc.
+        </p>
+        <p>
+          Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna.
+        </p>
+      </Section>
 
       <Cards
         header="Cards"
