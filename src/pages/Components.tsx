@@ -10,6 +10,12 @@ function Components() {
         secondaryAction={{ label: 'View Source' }}
       />
 
+      <Hero
+        image="https://placehold.co/200x60.png?text=LOGO"
+        description="This hero section includes a logo image above the header."
+        primaryAction={{ label: 'Learn More' }}
+      />
+
       <Section
         header="Centered Section"
         description="This is a centered section with text aligned to the center."
