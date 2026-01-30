@@ -579,6 +579,13 @@ hr {
   outline-offset: 2px;
 }
 
+/* Mobile menu button - hide on desktop */
+@media (min-width: 768px) {
+  button[aria-label='Open menu'] {
+    display: none !important;
+  }
+}
+
 /* Animation utilities */
 @keyframes fadeIn {
   from {
