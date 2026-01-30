@@ -104,6 +104,12 @@
     BlinkMacSystemFont,
     'Segoe UI',
     sans-serif;
+    /*
+    'Lora',
+    Georgia,
+    'Times New Roman',
+    serif;
+    */
   line-height: 1.5;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-normal);
