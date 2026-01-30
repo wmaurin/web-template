@@ -638,3 +638,8 @@ hr {
 .animate-slide-in {
   animation: slideInFromBottom var(--transition-normal);
 }
+
+/* Invert images in light mode (for logos that are light-on-dark) */
+:root.light .invert-on-light {
+  filter: invert(1);
+}
