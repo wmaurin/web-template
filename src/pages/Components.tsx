@@ -1,4 +1,4 @@
-import { Hero, Cards, Gallery, Form, Table } from '../components';
+import { Hero, Cards, Gallery, Form } from '../components';
 
 function Components() {
   return (
@@ -82,32 +82,6 @@ function Components() {
         ]}
         submitLabel="Send Message"
         onSubmit={() => {}}
-      />
-
-      <Table
-        header="Table"
-        description="This is a table with a grid of plans and features."
-        columns={['Plan', 'Price', 'Features', 'Action']}
-        rows={[
-          [
-            'Free',
-            '$0/mo',
-            '5 projects, 1GB storage',
-            <button className="ghost">Select</button>,
-          ],
-          [
-            'Pro',
-            '$19/mo',
-            'Unlimited projects, 50GB storage',
-            <button className="ghost">Select</button>,
-          ],
-          [
-            'Enterprise',
-            '$99/mo',
-            'Everything + priority support',
-            <button className="ghost">Select</button>,
-          ],
-        ]}
       />
     </div>
   );
